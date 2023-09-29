@@ -6,6 +6,7 @@ body {
   background-size: cover;
   short hand \/  seria um resumo de tudo ai de cima; background: color image repeat position/size*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 * {
@@ -153,4 +154,15 @@ footer {
   padding: 24px o;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: urL(./assets/bg-desktop.jpg);
+  
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
